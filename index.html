@@ -79,7 +79,7 @@
     </section>
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <div class="mt-3 container file-upload">
-        <div class="image-upload-wrap">
+        <div class="image-upload-wrap"> 
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
             <div class="drag-text">
                 <img src="img/upload.svg" class="mt-5 pt-5 upload">
@@ -265,59 +265,61 @@
 
                 // 강아지
                 switch (prediction[0].className) {
-                    case "Golden Retriever":
+                    case "GoldenRetriever":
                         resultTitle = "골든 리트리버"
                         resultExplain = "첫 인상은 강한 신뢰감을 주지만 알고 보면 다정한 매력을 가진 당신! 따뜻하고 친절한 성격으로 연인을 언제나 편안하게 챙겨주는 당신은 믿음직한 파트너! 포근한 매력에 충성심까지 갖춘 완벽한 사람이다!"
-                        resultCeleb = "강아지상 연예인: 강다니엘, 백현(엑소), 박보검, 송중기"
+                        resultCeleb = "특징 키워드: 친절함, 충성심, 포근함, 사교적"
                         gtag('event', '강아지 결과 골든 리트리버상', { 'event_category': '강아지 결과' });
                         break;
                     case "Dachshund":
                         resultTitle = "닥스훈트"
                         resultExplain = "첫 인상은 독특하게 보일 수 있지만, 알고 보면 깊은 애정과 헌신을 가진 당신! 개성 넘치고 충성심 강한 성격으로 연인을 정성껏 챙겨주는 당신은 언제나 특별한 존재! 독특함과 사랑을 가진 멋진 사람이다!"
-                        resultCeleb = "고양이상 연예인: 황민현(뉴이스트), 시우민(엑소), 강동원, 이종석, 이준기"
+                        resultCeleb = "특징 키워드: 용감함, 호기심 많음, 충성심, 사냥 본능"
                         gtag('event', '강아지 결과 닥스훈트상', { 'event_category': '강아지 결과' });
                         break;
                     case "Maltese":
                         resultTitle = "말티즈"
                         resultExplain = "첫 인상은 순수하고 우아해 보이지만, 알고 보면 깊은 애정과 배려를 가진 당신! 세심하고 다정한 성격으로 연인을 언제나 따뜻하게 챙겨주는 당신은 언제나 사랑스러운 파트너! 우아함과 사랑을 겸비한 멋진 사람이다!"
-                        resultCeleb = "토끼상 연예인: 정국(방탄소년단), 바비(아이콘), 박지훈(워너원), 수호(엑소)"
+                        resultCeleb = "특징 키워드: 순수함, 우아함, 애교, 친근함"
                         gtag('event', '강아지 결과 말티즈상', { 'event_category': '강아지 결과' });
                         break;
                     case "Maltipoo":
                         resultTitle = "말티푸"
                         resultExplain = "첫 인상은 귀여움으로 다가오지만 알고 보면 깊은 사랑과 헌신을 지닌 당신! 애교가 넘치고 다정한 성격으로 연인을 언제나 챙겨주는 당신은 언제나 사랑스러운 존재! 귀여움과 헌신을 가진 최고의 사람이다!"
-                        resultCeleb = "공룡상 연예인: 윤두준(하이라이트), 이민기, 김우빈, 육성재(비투비), 공유"
+                        resultCeleb = "특징 키워드: 귀여움, 활발함, 다정함, 애교"
                         gtag('event', '강아지 결과 말티푸상', { 'event_category': '강아지 결과' });
                         break;
                     case "Bulldog":
                         resultTitle = "불도그"
                         resultExplain = "첫 인상은 다소 무거워 보일 수 있지만 알고 보면 따뜻하고 사랑스러운 매력을 지닌 당신! 강한 성격으로 연인을 든든하게 챙겨주는 당신은 언제나 믿을 수 있는 파트너! 듬직함과 따뜻함을 겸비한 멋진 사람이다!"
-                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
+                        resultCeleb = "특징 키워드: 강인함, 듬직함, 충성심, 온순함"
                         gtag('event', '강아지 결과 불도그상', { 'event_category': '강아지 결과' });
                         break;
-                    case "Shih Tzu":
+                    case "ShihTzu":
                         resultTitle = "시츄"
                         resultExplain = "첫 인상은 귀여움으로 다가오지만 알고 보면 깊은 사랑을 주는 매력의 당신! 애교가 넘치고 섬세한 성격으로 연인을 정성껏 챙겨주는 당신은 연인에게 언제나 따뜻한 존재! 귀여운 매력과 세심함을 가진 최고의 사람이다!"
-                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
+                        resultCeleb = "특징 키워드: 귀여움, 애교, 섬세함, 다정함"
                         gtag('event', '강아지 결과 시츄상', { 'event_category': '강아지 결과' });
                         break;
                     case "Chihuahua":
                         resultTitle = "치와와"
                         resultExplain = "첫 인상은 작고 다소 날카로워 보일 수 있지만, 알고 보면 깊은 애정과 사랑을 가진 당신! 용감하고 자신감 넘치는 성격으로 연인을 언제나 지켜주는 당신은 듬직한 파트너! 귀여움과 강한 충성심을 지닌 멋진 사람이다!"
-                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
+                        resultCeleb = "특징 키워드: 작음, 용감함, 자신감, 충성심"
                         gtag('event', '강아지 결과 치와와상', { 'event_category': '강아지 결과' });
                         break;
                     case "Pomeranian":
                         resultTitle = "포메라니안"
                         resultExplain = "첫 인상은 작고 발랄해 보이지만 알고 보면 깊은 애정과 헌신을 가진 당신! 활발하고 애교 넘치는 성격으로 연인을 항상 웃게 해주는 당신은 언제나 사랑스러운 존재! 귀여움과 헌신을 갖춘 최고의 사람이다!"
+                        resultCeleb = "특징 키워드: 활발함, 애교, 귀여움, 충성심"
                         gtag('event', '강아지 결과 포메라니안상', { 'event_category': '강아지 결과' });
                         break;
                     case "Poodle":
                         resultTitle = "푸들"
                         resultExplain = "첫 인상은 세련되고 지적인 매력을 풍기지만, 알고 보면 다정하고 사랑스러운 성격의 당신! 섬세하고 세심한 배려로 연인을 언제나 편안하게 챙겨주는 당신은 매력적인 파트너! 우아함과 헌신을 가진 최고의 사람이다!"
-                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
+                        resultCeleb = "특징 키워드: 지적임, 세련됨, 섬세함, 다정함"
                         gtag('event', '강아지 결과 푸들상', { 'event_category': '강아지 결과' });
                         break;
+
                     default:
                         resultTitle = "알수없음"
                         resultExplain = ""
@@ -335,31 +337,31 @@
                     case "PersianCat":
                         resultTitle = "페르시안 고양이"
                         resultExplain = "첫 인상은 고급스럽고 우아하지만 알고 보면 따뜻하고 부드러운 매력을 가진 당신! 조용하고 차분한 성격으로 연인을 언제나 배려하며 챙겨주는 당신은 믿음직한 파트너! 우아함과 세심함을 겸비한 최고의 사람이다!"
-                        resultCeleb = "강아지상 연예인: 강다니엘, 백현(엑소), 박보검, 송중기"
+                        resultCeleb = "특징 키워드 : 털이 김, 색깔이 다양, 조용, 온순함"
                         gtag('event', '고양이 결과 페르시안 고양이상', { 'event_category': '고양이 결과' });
                         break;
                     case "SiameseCat":
                         resultTitle = "시암 고양이"
                         resultExplain = "첫 인상은 똑똑하고 시원시원해 보이지만 알고 보면 깊은 애정과 헌신을 지닌 당신! 똑똑하고 개성 넘치는 성격으로 연인을 언제나 지혜롭게 챙겨주는 당신은 언제나 사랑스러운 존재! 지적이고 다정한 최고의 사람이다!"
-                        resultCeleb = "고양이상 연예인: 황민현(뉴이스트), 시우민(엑소), 강동원, 이종석, 이준기"
+                        resultCeleb = "특징 키워드 : 큰 귀, 긴 뒷다리, 긴 꼬리, 친화력, 애교"
                         gtag('event', '고양이 결과 시암 고양이상', { 'event_category': '고양이 결과' });
                         break;
                     case "SphynxCat":
                         resultTitle = "스핑크스 고양이"
                         resultExplain = "첫 인상은 독특하고 조금은 신비롭지만, 알고 보면 깊은 애정과 친절을 가진 당신! 개성 넘치고 따뜻한 성격으로 연인을 언제나 정성껏 챙겨주는 당신은 언제나 특별한 존재! 독특함과 사랑을 지닌 멋진 사람이다!"
-                        resultCeleb = "토끼상 연예인: 정국(방탄소년단), 바비(아이콘), 박지훈(워너원), 수호(엑소)"
+                        resultCeleb = "특징 키워드 : 큰 눈과 귀, 추위나 더위에 약함, 털이 없음, 피부에 유분기"
                         gtag('event', '고양이 결과 스핑크스 고양이상', { 'event_category': '고양이 결과' });
                         break;
                     case "KoreanShorthairCat":
                         resultTitle = "코리안 숏헤어 고양이"
                         resultExplain = "첫 인상은 친근하고 편안해 보이지만 알고 보면 깊은 사랑과 헌신을 지닌 당신! 자연스럽고 신뢰감 넘치는 성격으로 연인을 언제나 편안하게 챙겨주는 당신은 언제나 든든한 파트너! 친근함과 헌신을 가진 최고의 사람이다!"
-                        resultCeleb = "공룡상 연예인: 윤두준(하이라이트), 이민기, 김우빈, 육성재(비투비), 공유"
+                        resultCeleb = "특징 키워드: 길고양이 출신, 사냥 본능, 야생성, 경계심"
                         gtag('event', '고양이 결과 코리안 숏헤어 고양이상', { 'event_category': '고양이 결과' });
                         break;
                     case "RussianBlueCat":
                         resultTitle = "러시안 블루 고양이"
                         resultExplain = "첫 인상은 신비롭고 우아하지만, 알고 보면 다정하고 사랑스러운 매력을 가진 당신! 차분하고 섬세한 성격으로 연인을 언제나 정성껏 챙겨주는 당신은 언제나 사랑스러운 존재! 신비로움과 다정함을 겸비한 멋진 사람이다!"
-                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
+                        resultCeleb = "특징 키워드 : 은회색, 푸른빛, 조용함, 온순함, 잘 울지 않음"
                         gtag('event', '고양이 결과 러시안 블루 고양이상', { 'event_category': '고양이 결과' });
                         break;
                     default:
